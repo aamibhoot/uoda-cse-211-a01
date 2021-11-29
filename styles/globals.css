@@ -1,3 +1,60 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Sora";
+  src: url("/fonts/Sora-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Sora Bold";
+  src: url("/fonts/static/Sora-Bold.ttf");
+}
+@font-face {
+  font-family: "Sora ExtraBold";
+  src: url("/fonts/static/Sora-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Sora ExtraLight";
+  src: url("/fonts/static/Sora-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Sora Light";
+  src: url("/fonts/static/Sora-Light.ttf");
+}
+@font-face {
+  font-family: "Sora Medium";
+  src: url("/fonts/static/Sora-Medium.ttf");
+}
+@font-face {
+  font-family: "Sora Regular";
+  src: url("/fonts/static/Sora-Regular.ttf");
+}
+@font-face {
+  font-family: "Sora SemiBold";
+  src: url("/fonts/static/Sora-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Sora Thin";
+  src: url("/fonts/static/Sora-Thin.ttf");
+}
+@font-face {
+  font-family: "Yellowtail";
+  src: url("/fonts/Yellowtail-Regular.ttf");
+}
+@font-face {
+  font-family: "Zeyada";
+  src: url("/fonts/Zeyada-Regular.ttf");
+}
+@font-face {
+  font-family: "Fuggles";
+  src: url("/fonts/Fuggles-Regular.ttf");
+}
+@font-face {
+  font-family: "Festive";
+  src: url("/fonts/Festive-Regular.ttf");
+}
 html,
 body {
   padding: 0;
@@ -13,4 +70,264 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.sora-extralight {
+  font-family: "Sora ExtraLight";
+}
+.sora-bold {
+  font-family: "Sora Bold";
+}
+.sora-extrabold {
+  font-family: "Sora ExtraBold";
+}
+.sora-light {
+  font-family: "Sora Light";
+}
+.sora-medium {
+  font-family: "Sora Medium";
+}
+.sora-regular {
+  font-family: "Sora Regular";
+}
+.sora-semibold {
+  font-family: "Sora SemiBold";
+}
+.sora-thin {
+  font-family: "Sora Thin";
+}
+.yellowtail {
+  font-family: "Yellowtail";
+}
+.zeyada {
+  font-family: "Zeyada";
+}
+.festive {
+  font-family: "Festive";
+}
+input:checked + svg {
+  display: block;
+}
+/* Background styles */
+body {
+  background-image: radial-gradient(
+      circle,
+      rgba(45, 44, 44, 0.5158438375350141) 0%,
+      rgba(0, 0, 0, 0.8071603641456583) 100%
+    ),
+    url("/cover2.jpg");
+  width: 100%;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  font-family: "Sora Regular", Arial, Helvetica, sans-serif;
+}
+
+/* Glassmorphism card effect */
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.glass2 {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-image: linear-gradient(
+    -45deg,
+    rgba(67, 164, 249, 0.438),
+    rgba(104, 218, 148, 0.438)
+  );
+}
+.card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.25);
+
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.button-0 {
+  color: #fff;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  padding: 10.5px 25px;
+  border: none;
+  border-radius: 35px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-image: linear-gradient(
+    -45deg,
+    #43a5f9,
+    #68da94,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.25)
+  );
+  background-size: 300%;
+  background-position: 0 0;
+  -webkit-appearance: none !important;
+
+  text-decoration: none;
+}
+.button-0:disabled,
+.button-1:disabled {
+  background: rgba(7, 7, 7, 0.555);
+  color: rgba(255, 255, 255, 0.25);
+}
+.button-1 {
+  color: #fff;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  padding: 10.5px 25px;
+  border: none;
+  border-radius: 35px;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.25),
+    #43a5f9,
+    #68da94
+  );
+  background-size: 300%;
+  background-position: 0 0;
+  -webkit-appearance: none !important;
+  text-decoration: none;
+}
+.button-2 {
+  color: #fff;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  padding: 10.5px 25px;
+  border: none;
+  border-radius: 35px;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-image: linear-gradient(45deg, #43a5f9, #43a5f9, #43a5f9, #68da94);
+  background-size: 300%;
+  background-position: 0 0;
+  -webkit-appearance: none !important;
+  text-decoration: none;
+}
+
+.button-2doom {
+  color: #fff;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  padding: 10.5px 25px;
+  border: none;
+  border-radius: 35px;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(7, 7, 7, 0.555);
+  background-size: 300%;
+  background-position: 0 0;
+  -webkit-appearance: none !important;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+.button-0:hover,
+.button-1:hover,
+.button-2:hover {
+  background-position: 100% 0;
+  color: #fff;
+}
+
+@-webkit-keyframes checkmark {
+  0% {
+    stroke-dashoffset: 100px;
+  }
+
+  100% {
+    stroke-dashoffset: 200px;
+  }
+}
+
+@-ms-keyframes checkmark {
+  0% {
+    stroke-dashoffset: 100px;
+  }
+
+  100% {
+    stroke-dashoffset: 200px;
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    stroke-dashoffset: 100px;
+  }
+
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-webkit-keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 480px;
+  }
+
+  100% {
+    stroke-dashoffset: 960px;
+  }
+}
+
+@-ms-keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 240px;
+  }
+
+  100% {
+    stroke-dashoffset: 480px;
+  }
+}
+
+@keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 480px;
+  }
+
+  100% {
+    stroke-dashoffset: 960px;
+  }
+}
+
+@keyframes colored-circle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+/* other styles */
+/* .svg svg {
+    display: none
+}
+ */
+.inlinesvg .svg svg {
+  display: inline;
+}
+
+/* .svg img {
+    display: none
+} */
+
+.icon--order-success svg polyline {
+  -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  animation: checkmark 0.25s ease-in-out 0.7s backwards;
+}
+
+.icon--order-success svg circle {
+  -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+  animation: checkmark-circle 0.6s ease-in-out backwards;
+}
+.icon--order-success svg circle#colored {
+  -webkit-animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+  animation: colored-circle 0.6s ease-in-out 0.7s backwards;
 }
